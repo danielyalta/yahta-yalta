@@ -1,0 +1,185 @@
+// ================= INTRO ================= //
+
+.no-webp .intro {
+    background: url(../images/intro/main-bg.jpg) center no-repeat;
+}
+
+.webp .intro {
+    background: url(../images/intro/main-bg.webp) center no-repeat;
+}
+
+.intro {
+    padding: 8rem 0;
+    height: auto;
+    width: 100%;
+
+    background: url(../images/intro/main-bg.jpg) center no-repeat;
+    background: $color-darkblue;
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        width: 85%;
+
+        margin-bottom: 8rem;
+
+        font-size: 6rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.2;
+        text-shadow: $text-shadow;
+    }
+    &__subtitle {
+        width: 80%;
+
+        position: relative;
+
+        margin-bottom: 12rem;
+
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 1.4;
+        font-weight: 300;
+        font-style: italic;
+        text-shadow: $text-shadow;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -30%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            display: block;
+            width: 35%;
+            height: 2px;
+            background: $color-bronze;
+        }
+    }
+    & p {
+        margin-top: 1rem;
+    }
+    &__smile {
+        font-style: normal;
+        text-shadow: none;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        z-index: 1;
+        height: 18px;
+        width: 100%;
+        background: url(../images/icons/rope.png) center repeat-x;
+    }
+}
+
+.anchor {
+    position: absolute;
+    bottom: -6%;
+    right: 8%;
+    z-index: 2;
+    height: 260px;
+    width: auto;
+}
+
+// ================= MEDIA ================= //
+
+@media (max-width: 1230px) {
+    .intro {
+        &__title {
+            margin-bottom: 6rem;
+            font-size: 5.5rem;
+        }
+        &__subtitle {
+            margin-bottom: 10rem;
+            font-size: 2rem;
+        }
+    }
+}
+@media (max-width: 990px) {
+    .no-webp .intro {
+        background: url(../images/intro/main-bg.jpg) center no-repeat;
+    }
+
+    .webp .intro {
+        background: url(../images/intro/main-bg.webp) center no-repeat;
+    }
+
+    .intro {
+        &__title {
+            font-size: 4rem;
+            width: 78%;
+        }
+        &__subtitle {
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    .anchor {
+        height: 220px;
+    }
+}
+@media (max-width: 770px) {
+    .intro {
+        &__title {
+            margin-bottom: 5rem;
+            font-size: 3rem;
+            width: 79%;
+        }
+        &__subtitle {
+            margin-bottom: 8rem;
+            font-size: 2rem;
+            &::after {
+                bottom: -15%;
+            }
+        }
+    }
+    .anchor {
+        height: 160px;
+    }
+}
+@media (max-width: 575px) {
+    .no-webp .intro {
+        background: url(../images/intro/main-bg-mobile.jpg) center no-repeat;
+    }
+
+    .webp .intro {
+        background: url(../images/intro/main-bg-mobile.webp) center no-repeat;
+    }
+
+    .intro {
+        padding: 4rem 0;
+        &__title {
+            font-size: 1.8rem;
+            width: 90%;
+            margin-bottom: 3rem;
+        }
+        &__subtitle {
+            margin-bottom: 3rem;
+            width: 90%;
+            font-size: 1.6rem;
+            line-height: 1.2;
+            & p {
+                width: 100%;
+            }
+            &:after {
+                content: "";
+                display: none;
+            }
+        }
+    }
+    .anchor {
+        height: 120px;
+        bottom: -3%;
+        right: 3%;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Каролина",
+    "type": "парусно-моторная",
+    "model": "",
+    "country": "",
+    "price": "7 500 руб/час",
+    "capacity": "до 8 человек",
+    "length": "14 м",
+    "beam": "4 м",
+    "draft": "2.2 м",
+    "speed": "",
+    "cabins": "4",
+    "sleeps": "8",
+    "toilets": "2"
+}

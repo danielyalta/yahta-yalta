@@ -1,0 +1,14 @@
+{
+    "name": "Альтаир",
+    "type": "катер",
+    "model": "",
+    "price": "7 000 руб/час",
+    "capacity": "до 10 человек",
+    "length": " м",
+    "width": " м",
+    "draft": " м",
+    "speed": "до км/ч",
+    "cabins": "",
+    "sleeps": "",
+    "toilets": ""
+}

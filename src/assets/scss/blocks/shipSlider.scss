@@ -1,0 +1,77 @@
+// .ship {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+// }
+
+.shipSlider {
+    width: 100%;
+
+    margin-bottom: 1rem;
+
+    background: $color-darkblue2;
+    // @include bg-gradient3-2;
+    &__image {
+        width: 100%;
+        height: 58rem;
+
+        background: $color-darkblue2;
+
+        & img {
+            @include img-fit;
+            object-fit: contain;
+        }
+    }
+}
+
+.shipSlider-mini {
+    &__image {
+        height: 12rem;
+
+        margin-right: 5px;
+
+        border: $border-boat-photo;
+        background: $color-darkblue2;
+
+        cursor: pointer;
+
+        & img {
+            @include img-fit;
+            transition: all 0.4s ease;
+        }
+        &:hover img {
+            // transform: scale(1.1);
+
+            opacity: 0.8;
+        }
+    }
+}
+
+// ================= MEDIA ================= //
+@media (max-width: 1230px) {
+}
+@media (max-width: 1100px) {
+}
+@media (max-width: 990px) {
+}
+@media (max-width: 770px) {
+    .shipSlider {
+        &__image {
+            height: 50rem;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .shipSlider {
+        &__image {
+            height: 40rem;
+        }
+    }
+    .shipSlider-mini {
+        &__image {
+            height: 6rem;
+
+            border: 1px solid $color-white;
+        }
+    }
+}

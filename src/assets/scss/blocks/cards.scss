@@ -1,0 +1,240 @@
+// ================= CARDS ================= //
+
+.no-webp .section--cards {
+    background: url(../images/cards/cards-bg.jpg) center no-repeat;
+}
+
+.webp .section--cards {
+    background: url(../images/cards/cards-bg.webp) center no-repeat;
+}
+
+.section--cards {
+    background-size: cover;
+
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        z-index: 1;
+        height: 18px;
+        width: 100%;
+        background: url(../images/icons/rope.png) center repeat-x;
+    }
+}
+
+.section--cards .section__title {
+    color: $color-white;
+    font-family: $font-nice;
+    font-size: 7rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 4rem;
+    &__item {
+        width: 28%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        padding: 1.6% 1.2% 0 1.2%;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+
+        background: url(../images/cards/polaroid-bg.jpg) repeat;
+        border: 1px solid #000;
+
+        transition: transform 0.5s ease;
+        &:nth-child(odd) {
+            z-index: 2;
+            transform: rotate(-5deg);
+        }
+        &:nth-child(even) {
+            transform: rotate(5deg);
+            z-index: 3;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            transform: scale(1.5);
+            z-index: 4;
+        }
+    }
+    &__photo {
+        display: block;
+        width: 100%;
+        height: 80%;
+        background-color: #000;
+        overflow: hidden;
+        & img {
+            z-index: 1;
+            transition: all 0.3s linear;
+            @include img-fit;
+            object-position: right;
+        }
+    }
+    &__caption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 20%;
+
+        padding: 1rem;
+
+        font-family: $font-nice;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: $color-black;
+        overflow: hidden;
+    }
+    &__text {
+        width: 50%;
+
+        margin-right: 3rem;
+
+        color: $color-white;
+        line-height: 1.2;
+        font-size: 2.5rem;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        & p {
+            margin: 2rem 0;
+        }
+    }
+    &__polaroid {
+        width: 25rem;
+        height: 30rem;
+        & img {
+            @include img-fit;
+        }
+    }
+}
+
+.cards--you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 0;
+}
+
+// ================= MEDIA ================= //
+
+@media (max-width: 1230px) {
+    .section--cards .section__title {
+        font-size: 6rem;
+    }
+    .cards {
+        &__caption {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .section--cards .section__title {
+        font-size: 5rem;
+    }
+    .cards {
+        &__item {
+            width: 35%;
+        }
+        &__caption {
+            font-size: 2.5rem;
+        }
+        &__text {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .section--cards .section__title {
+        font-size: 4rem;
+    }
+    .no-webp .section--cards {
+        background: $color-darkblue;
+    }
+
+    .webp .section--cards {
+        background: $color-darkblue;
+    }
+    .section--cards {
+        @include bg-gradient1-2;
+    }
+    .cards {
+        align-items: center;
+        &__item {
+            width: 45%;
+            height: auto;
+            &:nth-child(odd) {
+                z-index: 2;
+                transform: rotate(-5deg);
+            }
+            &:nth-child(even) {
+                transform: rotate(5deg);
+            }
+            &:hover {
+                transform: none;
+            }
+            &:last-child {
+                transform: none;
+                margin-bottom: 0;
+            }
+        }
+        &__caption {
+            font-size: 3rem;
+        }
+        &__polaroid {
+            display: none;
+        }
+        &__text {
+            width: 70%;
+            margin-right: 0;
+            font-size: 1.8rem;
+            & p {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .section--cards .section__title {
+        font-size: 3rem;
+    }
+    .cards {
+        flex-direction: column;
+        &__item {
+            width: 100%;
+            margin-right: 0;
+            padding: 2.5% 2% 0 2%;
+            &:nth-child(odd) {
+                transform: none;
+            }
+            &:nth-child(even) {
+                transform: none;
+            }
+            &:hover {
+                transform: none;
+            }
+        }
+        &__caption {
+            font-size: 2.5rem;
+        }
+        &__text {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+}

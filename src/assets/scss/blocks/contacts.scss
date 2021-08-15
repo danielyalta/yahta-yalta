@@ -1,0 +1,209 @@
+// ================= CONTACTS ================= //
+
+.section--contacts {
+    background: -webkit-linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
+    background: linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
+}
+
+.social--contacts {
+    margin: 0;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 48%;
+    }
+    &__chats {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+        padding: 1rem 0;
+    }
+    &__location {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: $color-white;
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding: 0 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+
+        transition: all 0.5s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__wrapper {
+        &:hover .contacts__phone:after {
+            transform: scaleX(1);
+        }
+    }
+    &__phone {
+        display: block;
+        position: relative;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $color-bronze;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -0.7rem;
+            left: 0;
+            z-index: 1;
+            background: $color-bronze;
+            height: 2px;
+            width: 100%;
+            transform: scaleX(0);
+            transition: all 0.5s ease;
+        }
+    }
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 2rem 0;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+    &__text {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-right: 2rem;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+// ================= MEDIA ================= //
+
+@media (max-width: 1230px) {
+    .contacts {
+        &__person {
+            margin-bottom: 4rem;
+            font-size: 2rem;
+        }
+        &__schedule {
+            font-size: 1.6rem;
+        }
+        &__title {
+            font-size: 2.4rem;
+        }
+        &__text {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .contacts {
+        &__item {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        &__col {
+            width: 100%;
+        }
+        &__item {
+            margin-bottom: 3.5rem;
+            font-size: 2.5rem;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__location {
+            margin-top: 4rem;
+            width: 100%;
+        }
+        &__name {
+            margin-bottom: 1rem;
+        }
+        &__social {
+            justify-content: center;
+            margin-top: 0;
+        }
+        &__title {
+            font-size: 2.2rem;
+        }
+        &__text {
+            font-size: 2.2rem;
+        }
+    }
+    .map {
+        width: 90%;
+    }
+}
+
+@media (max-width: 770px) {
+    .contacts {
+        &__item {
+            align-items: center;
+        }
+        &__name {
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .map {
+        height: 300px;
+    }
+    .contacts {
+        &__item {
+            font-size: 2rem;
+        }
+        &__title {
+            font-size: 2rem;
+        }
+        &__text {
+            display: none;
+        }
+        &__icon {
+            width: 4rem;
+            height: 4rem;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Раскат",
+    "type": "катамаран",
+    "model": "Wildcat 350",
+    "country": "ЮАР",
+    "price": "11 500 руб/час",
+    "capacity": "до 10 человек",
+    "length": "10.5 м",
+    "beam": "6 м",
+    "draft": "1 м",
+    "speed": "12 км/ч",
+    "cabins": "5",
+    "sleeps": "10",
+    "toilets": "2"
+}

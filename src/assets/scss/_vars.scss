@@ -1,0 +1,93 @@
+// ================= VARS ================= //
+$color-lightblue: #4286f4;
+$color-darkblue: #28364a;
+$color-darkblue2: #1d2835;
+$color-darkblue3: #0f141c;
+$color-darkblue4: #080b0e;
+$color-bronze: #cebc8c;
+$color-white: #fff;
+$color-black: #181818;
+
+$font-main: "Montserrat", sans-serif;
+$font-nice: "Caveat", italic;
+
+$text-shadow: $color-darkblue3 3px 2px 3px;
+$text-shadow-white: $color-white 2px 2px 3px;
+$text-shadow-green: green 2px 2px 3px;
+
+$border-boat-photo: 2px solid $color-white;
+$border-fancy: 85% 15% 84% 16% / 9% 91% 9% 91%;
+$border-fancy-reverse: 9% 91% 9% 91% / 85% 15% 84% 16%;
+
+$gradient1-3: linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
+$gradient2-3: linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
+
+$button-glow: $color-bronze 0px 0px 6px;
+
+// ================= Mixins ================= //
+
+@mixin img-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg-gradient1-2 {
+    background: $color-darkblue;
+    background: -moz-linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
+    background: -webkit-linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
+    background: linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
+}
+@mixin bg-gradient1-3 {
+    background: $color-darkblue;
+    background: -moz-linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
+    background: -webkit-linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
+    background: linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
+}
+@mixin bg-gradient2-3 {
+    background: $color-darkblue2;
+    background: -moz-linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
+    background: -webkit-linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
+    background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
+}
+@mixin bg-gradient2-4 {
+    background: $color-darkblue2;
+    background: -moz-linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
+    background: -webkit-linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
+    background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
+}
+@mixin bg-gradient3-1 {
+    background: $color-darkblue;
+    background: -moz-linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
+    background: -webkit-linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
+    background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
+}
+@mixin bg-gradient3-2 {
+    background: $color-darkblue;
+    background: -moz-linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
+    background: -webkit-linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
+    background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
+}
+@mixin bg-gradient-radial {
+    background: $color-darkblue;
+    background: -moz-radial-gradient(circle, rgba(29, 40, 53, 1) 0%, rgba(40, 54, 74, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(29, 40, 53, 1) 0%, rgba(40, 54, 74, 1) 100%);
+    background: radial-gradient(circle, $color-darkblue2, $color-darkblue);
+}
+
+@mixin box-shadow-boats {
+    -webkit-box-shadow: 4px 6px 6px 2px $color-darkblue3;
+    -moz-box-shadow: 4px 6px 6px 2px $color-darkblue3;
+    box-shadow: 4px 6px 6px 2px $color-darkblue3;
+}
+@mixin box-shadow-boats-hover {
+    -webkit-box-shadow: 4px 6px 9px 1px $color-darkblue3;
+    -moz-box-shadow: 4px 6px 9px 1px $color-darkblue3;
+    box-shadow: 4px 6px 9px 1px $color-darkblue3;
+}

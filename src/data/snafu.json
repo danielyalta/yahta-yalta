@@ -1,0 +1,15 @@
+{
+    "name": "Снафу",
+    "type": "моторная",
+    "model": "Carver 40",
+    "country": "США",
+    "price": "13 500 руб/час",
+    "capacity": "до 10 человек",
+    "length": "12 м",
+    "beam": "4 м",
+    "draft": "1 м",
+    "speed": "25 км/ч",
+    "cabins": "3",
+    "sleeps": "7",
+    "toilets": "1"
+}

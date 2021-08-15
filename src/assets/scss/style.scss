@@ -1,0 +1,56 @@
+@import "vars";
+@import "nullstyle";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/header-nav";
+@import "blocks/intro";
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/cards";
+@import "blocks/dolphins";
+@import "blocks/services";
+@import "blocks/boats";
+@import "blocks/ship";
+@import "blocks/shipSlider";
+@import "blocks/otherboats";
+@import "blocks/gallery";
+@import "blocks/video";
+@import "blocks/contacts";
+@import "blocks/footer";
+
+// Vendor
+@import "vendor/light-gallery/lightgallery-bundle";
+@import "vendor/swiper/swiper-bundle";
+@import "vendor/swiper/swiper";
+
+// 1 rem = 10px
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $color-white;
+    background: $color-darkblue;
+    font-family: $font-main;
+    font-size: 1.4rem;
+}
+
+.page {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+img {
+    pointer-events: none;
+}
+
+// ================= Lazy-Load ================= //
+
+.lazyloading {
+    background: $color-darkblue2 url(../images/loading.gif) no-repeat center;
+}

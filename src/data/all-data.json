@@ -1,0 +1,20 @@
+{
+    "word-yes": "Да",
+    "word-no": "Нет",
+    "word-type": "Тип:",
+    "word-price": "Цена:",
+    "word-capacity": "Вмещает:",
+    "word-description": "Описание",
+    "word-length": "Длина:",
+    "word-beam": "Ширина:",
+    "word-draft": "Осадка:",
+    "word-speed": "Скорость:",
+    "word-cabins": "Кают:",
+    "word-sleeps": "Спальных мест:",
+    "word-toilets": "Гальюнов:",
+    "word-planing": "Глиссер",
+    "word-platform": "Платформа",
+    "word-walkphotos": "Фото с прогулок",
+    "word-video": "Видео",
+    "word-order": "Заказать"
+}

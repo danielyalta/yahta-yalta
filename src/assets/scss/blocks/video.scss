@@ -1,0 +1,102 @@
+// ================= VIDEO ================= //
+
+.section--video .section__title {
+    font-family: $font-nice;
+    font-size: 7rem;
+}
+
+.video {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        flex-wrap: wrap;
+        width: 33%;
+        height: 100%;
+        &--big {
+            width: 62%;
+        }
+    }
+    &__item {
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+        -webkit-box-shadow: 17px 13px 15px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 17px 13px 15px 1px rgba(0, 0, 0, 0.35);
+        box-shadow: 17px 13px 15px 1px rgba(0, 0, 0, 0.35);
+        margin-bottom: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &--big {
+            height: 500px;
+        }
+    }
+    & iframe {
+        @include img-fit;
+    }
+}
+
+// ================= MEDIA ================= //
+
+@media (max-width: 1230px) {
+    .section--video .section__title {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 1100px) {
+    .video {
+        &__item {
+            height: 200px;
+            &--big {
+                height: 420px;
+            }
+        }
+    }
+}
+@media (max-width: 990px) {
+    .section--video .section__title {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 770px) {
+    .section--video .section__title {
+        font-size: 4rem;
+    }
+    .video {
+        &__item {
+            height: 140px;
+            &--big {
+                height: 300px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .section--video .section__title {
+        font-size: 3rem;
+    }
+    .video {
+        flex-direction: column;
+        align-items: center;
+        &__col {
+            width: 90%;
+            margin-bottom: 2rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &--big {
+                width: 90%;
+            }
+        }
+        &__item {
+            height: 150px;
+            &--big {
+                height: 195px;
+            }
+        }
+    }
+}
