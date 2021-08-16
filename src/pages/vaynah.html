@@ -1,0 +1,38 @@
+---
+layout: default
+title: Яхта Вайнах. Аренда и морская прогулка на яхте vaynah, Ялта.
+---
+
+
+<div class="ship">
+
+    <div class="ship__name">
+        <h1><span>
+                {{vaynah.name}}
+            </span></h1>
+    </div>
+
+    <section class="ship__section">
+        {{> vaynah-ship-images}}
+    </section>
+
+    <div class="ship__inner">
+
+        <section class="ship__section">
+            {{> vaynah-about }}
+        </section>
+
+
+
+        <section class="ship__section">
+            {{> order }}
+        </section>
+
+
+
+        <section class="ship__section">
+            {{> otherboats }}
+        </section>
+
+    </div> <!-- ship__inner -->
+</div> <!-- ship -->

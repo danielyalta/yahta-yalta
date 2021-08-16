@@ -13,10 +13,6 @@ const plumber = require("gulp-plumber");
 const panini = require("panini");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp", 'webp-converter');
-// const webpHTML = require("gulp-xv-webp-html");
-// const webpcss = require("gulp-webpcss");
-// const webpHTML = require('gulp-webp-html-fix');
-// const dataHTML = require('gulp-datasrc-html');
 const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
@@ -238,8 +234,8 @@ function fonts(cb) {
     cb();
 }
 
-function seo(cb) {
-    return gulp.src('src/seo/*')
+function includes(cb) {
+    return gulp.src('src/includes/*')
         .pipe(gulp.dest('dist'))
 
     cb();
@@ -259,7 +255,7 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts, seo));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts, includes));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 
@@ -270,7 +266,7 @@ exports.css = css;
 exports.js = js;
 exports.images = images;
 exports.fonts = fonts;
-exports.seo = seo;
+exports.includes = includes;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
