@@ -38,6 +38,13 @@ $button-glow: $color-bronze 0px 0px 6px;
     align-items: center;
 }
 
+@mixin bg-gradient1-w {
+    background: $color-darkblue;
+    background: -moz-linear-gradient(to bottom, $color-darkblue, $color-white);
+    background: -webkit-linear-gradient(to bottom, $color-darkblue, $color-white);
+    background: linear-gradient(to bottom, $color-darkblue, $color-white);
+}
+
 @mixin bg-gradient1-2 {
     background: $color-darkblue;
     background: -moz-linear-gradient(to bottom, $color-darkblue, $color-darkblue2);

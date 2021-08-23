@@ -1,15 +1,15 @@
 {
-    "name": "Лабель",
+    "name": "Лабэль",
     "type": "парусно-моторная",
     "model": "",
     "country": "Греческая судоверфь",
-    "price": "9 500 руб/час",
-    "capacity": "",
-    "length": "",
-    "beam": "",
-    "draft": "",
-    "speed": "",
-    "cabins": "",
-    "sleeps": "",
-    "toilets": ""
+    "price": "10 000 руб/час",
+    "capacity": "до 10 человек",
+    "length": "15 м",
+    "beam": "4,4 м",
+    "draft": "2 м",
+    "speed": "9 узлов",
+    "cabins": "4",
+    "sleeps": "8",
+    "toilets": "2"
 }

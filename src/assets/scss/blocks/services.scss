@@ -3,29 +3,16 @@
 .section--services {
     color: $color-white;
     background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-darkblue, $color-white);
-    background: linear-gradient(
-        to bottom,
-        #1d2835,
-        #1f2a39,
-        #212d3d,
-        #233041,
-        #253245,
-        #374154,
-        #495163,
-        #5c6273,
-        #838694,
-        #acadb6,
-        #d5d5da,
-        #ffffff
-    );
+    @include bg-gradient1-w;
+    // background: url(../images/fancy/serviceswave2.svg) center no-repeat;
+    // background-size: cover;    
 }
 
 .services {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color: $color-white;
+    color: $color-white;    
     &__item {
         position: relative;
         z-index: 1;
@@ -131,7 +118,7 @@
         align-items: center;
         &__item {
             width: 80%;
-            height: 48rem;
+            height: 40rem;
             margin-right: 0;
             margin-bottom: 1rem;
             border: 3px solid $color-bronze;
@@ -154,11 +141,11 @@
     }
 }
 @media (max-width: 575px) {
-    .services {
+    .services {        
         &__item {
             width: 100%;
             border: 2px solid $color-bronze;
-            height: 40rem;
+            height: 34rem;
         }
         &__title {
             font-size: 3.8rem;
