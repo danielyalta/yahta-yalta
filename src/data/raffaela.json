@@ -1,0 +1,15 @@
+{
+    "name": "Раффаэла",
+    "type": "моторная",
+    "model": "RAFFAELLI 520",
+    "country": "Италия",
+    "price": "15 000 руб/час",
+    "capacity": "до 10 человек",
+    "length": "14 м",
+    "beam": "4.7 м",
+    "draft": "1.5 м",
+    "speed": "15 узлов",
+    "cabins": "3",
+    "sleeps": "6",
+    "toilets": "3"
+}
