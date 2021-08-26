@@ -1,4 +1,9 @@
 {
-    "source": "https://yahta-yalta.ru/index.html",
-    "destination": "https://yahta-yalta.ru"
-  }
+  "redirects": [
+    { 
+      "source": "/index.html",
+      "destination": "https://yahta-yalta.ru", 
+      "permanent": true
+    }
+  ]
+}
