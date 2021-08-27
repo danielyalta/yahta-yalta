@@ -3,7 +3,8 @@
     { 
       "source": "/index.html",
       "destination": "/", 
-      "permanent": true
+      "permanent": true,
+      "statusCode": 301
     }
   ]
 }
