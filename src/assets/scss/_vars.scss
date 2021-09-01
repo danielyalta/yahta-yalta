@@ -1,12 +1,15 @@
 // ================= VARS ================= //
 $color-lightblue: #4286f4;
-$color-darkblue: #28364a;
-$color-darkblue2: #1d2835;
-$color-darkblue3: #0f141c;
-$color-darkblue4: #080b0e;
-$color-bronze: #cebc8c;
-$color-white: #fff;
-$color-black: #181818;
+$color-darkblue: hsl(215,30,22);
+$color-darkblue2: hsl(215,30,17);
+$color-darkblue3: hsl(215,30,12);
+$color-darkblue4: hsl(215,30,7);
+
+$color-headerblue: hsl(218,31,15);
+
+$color-bronze: hsl(44,40,68);
+$color-white: hsl(0,0,100);
+$color-black: hsl(0,0,0);
 
 $font-main: "Montserrat", sans-serif;
 $font-nice: "Caveat", italic;
