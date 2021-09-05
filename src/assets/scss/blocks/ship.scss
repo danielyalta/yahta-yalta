@@ -219,7 +219,7 @@
     .ship {
         &::before {
             background: url(../images/fancy/waves-bg-mobile-2.svg) center no-repeat;
-            background-attachment: fixed;
+            background-size: cover;
         }
 
         &__name {

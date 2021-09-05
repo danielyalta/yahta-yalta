@@ -108,9 +108,9 @@
 
 // ================= MEDIA ================= //
 
-@media (max-width: 1281px) {
+@media (max-width: 1230px) {
     .intro {
-        padding: 10rem 0;
+        // padding: 10rem 0;
         &__title {
             margin-bottom: 6rem;
             font-size: 5.5rem;
@@ -157,12 +157,12 @@
 }
 @media (max-width: 575px) {
     .no-webp .intro {
-        background: url(../images/intro/yachts-image-11.jpg) center no-repeat;
+        background: url(../images/intro/main-bg-mobile.jpg) center no-repeat;
         background-size: cover;
     }
 
     .webp .intro {
-        background: url(../images/intro/yachts-image-11.webp) center no-repeat;
+        background: url(../images/intro/main-bg-mobile.webp) center no-repeat;
         background-size: cover;
     }
 
