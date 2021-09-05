@@ -9,12 +9,16 @@
 
     &::before {
         content: "";
-        position: absolute;
-        inset: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         z-index: -1;
+
         background: url(../images/fancy/waves-bg-3.svg) center no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        will-change: transform;
     }
 
     &__name {
