@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const burger = document.getElementById('burger');
     const navMenu = document.getElementById('nav');
     const navLinks = document.querySelectorAll('.nav__link');
+    const mySite = document.getElementById('main');
     // 
 
 
@@ -38,8 +39,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
 
-    // ============ Nav-link click: close burger ============ //    
+    // ============ Nav-link + outside: click - hide burger ============ //    
     navLinks.forEach(n => n.addEventListener("click", closeMenu));
+
+    mySite.addEventListener("click", closeMenu);
+
 
     function closeMenu() {
         burger.classList.remove("show");
