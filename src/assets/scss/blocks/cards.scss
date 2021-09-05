@@ -1,11 +1,19 @@
 // ================= CARDS ================= //
 
 .section--cards {
-    background-size: cover;
-    background: url(../images/fancy/waves-bg-3.svg);
-    @include background-fixed;
-
+    background: none;
     position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+
+        background: url(../images/fancy/waves-bg-3.svg) center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     &:after {
         content: "";
         position: absolute;
@@ -199,8 +207,10 @@
     }
 
     .section--cards {
-        background: url(../images/fancy/waves-bg-mobile-2.svg);
-        @include background-fixed;
+        &::before {
+            background: url(../images/fancy/waves-mobile-2.svg) center no-repeat;
+            background-attachment: fixed;
+        }
     }
 
     .cards {

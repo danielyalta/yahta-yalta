@@ -3,16 +3,16 @@
 .section--services {
     color: $color-white;
     background: $color-darkblue;
-    @include bg-gradient1-2;
+    @include bg-gradient2-w;
     // background: url(../images/fancy/serviceswave2.svg) center no-repeat;
-    // background-size: cover;    
+    // background-size: cover;
 }
 
 .services {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color: $color-white;    
+    color: $color-white;
     &__item {
         position: relative;
         z-index: 1;
@@ -141,7 +141,7 @@
     }
 }
 @media (max-width: 575px) {
-    .services {        
+    .services {
         &__item {
             width: 100%;
             border: 2px solid $color-bronze;
