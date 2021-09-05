@@ -3,7 +3,7 @@
 .section--services {
     color: $color-white;
     background: $color-darkblue;
-    @include bg-gradient1-w;
+    @include bg-gradient1-2;
     // background: url(../images/fancy/serviceswave2.svg) center no-repeat;
     // background-size: cover;    
 }

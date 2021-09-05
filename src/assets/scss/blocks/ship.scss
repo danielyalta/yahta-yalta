@@ -4,13 +4,15 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: $color-darkblue;
+    background: url(../images/fancy/waves-bg-3.svg);
+    @include background-fixed;
+
     &__name {
         margin: 3rem auto;
         letter-spacing: 0.8px;
         font-size: 5rem;
         font-weight: 700;
-    }        
+    }
     &__section {
         width: 100%;
         padding: 5rem 0;
@@ -77,7 +79,8 @@
         font-size: 2rem;
         border-radius: 2rem;
         @include bg-gradient2-4;
-        @include box-shadow-boats-hover;
+
+        box-shadow: 0px 0px 5px 1px $color-blue;
     }
     &__parameters {
         position: relative;
@@ -200,6 +203,8 @@
 }
 @media (max-width: 575px) {
     .ship {
+        background: url(../images/fancy/waves-bg-mobile-2.svg);
+        @include background-fixed;
         &__name {
             margin: 2rem auto;
             font-size: 3.5rem;
