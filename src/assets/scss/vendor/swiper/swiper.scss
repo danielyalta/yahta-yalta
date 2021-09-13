@@ -9,5 +9,11 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-    text-shadow: $button-glow;
+    -webkit-tap-highlight-color: transparent;
+    text-shadow: $button-glow;    
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    padding: 10rem;
 }
