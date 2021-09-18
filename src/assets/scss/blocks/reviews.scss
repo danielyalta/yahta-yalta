@@ -1,0 +1,31 @@
+// ================= REVIEWS ================= //
+
+.section--reviews .section__title {
+    font-family: $font-nice;
+    font-size: 7rem;
+}
+
+
+
+// ================= MEDIA ================= //
+
+@media (max-width: 1230px) {
+    .section--reviews .section__title {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 990px) {
+    .section--reviews .section__title {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 770px) {
+    .section--reviews .section__title {
+        font-size: 4rem;
+    }    
+}
+@media (max-width: 575px) {
+    .section--reviews .section__title {
+        font-size: 4.2rem;
+    }    
+}
