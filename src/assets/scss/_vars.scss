@@ -5,6 +5,7 @@
 // $color-darkblue3: #151D28
 // $color-darkblue4: #0c1117
 
+$color-lightblue: hsl(215, 30, 40);
 $color-blue: hsl(215, 30, 30);
 $color-darkblue: hsl(215, 30, 22);
 $color-darkblue2: hsl(215, 30, 17);
@@ -103,6 +104,15 @@ $button-glow: $color-bronze 0px 0px 6px;
     background: -webkit-radial-gradient(circle, rgba(29, 40, 53, 1) 0%, rgba(40, 54, 74, 1) 100%);
     background: radial-gradient(circle, $color-darkblue2, $color-darkblue);
 }
+
+@mixin bg-gradientl-2 {
+    background: $color-darkblue;
+    background: -moz-linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
+    background: -webkit-linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
+    background: linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
+}
+
+// Shadows
 
 @mixin box-shadow-boats {
     -webkit-box-shadow: 4px 6px 6px 2px $color-darkblue3;

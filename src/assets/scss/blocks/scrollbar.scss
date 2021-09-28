@@ -1,18 +1,22 @@
 // ================= Scroll-bar ================= //
 
-// ::-webkit-scrollbar {
-//     width: 2em;
-//     height: 1em;
-// }
+::-webkit-scrollbar {
+    width: 2.5rem;
+}
 
-// ::-webkit-scrollbar-track {
-//     background: hsl(120 75% 50% / 1);
-//     border-radius: 100vw;
-//     margin-block: 0.5em;
-// }
+::-webkit-scrollbar-track {    
+    background: $color-darkblue4;
+    
+}
 
-// ::-webkit-scrollbar-thumb {
-//     background: hsl(120 100% 20% / 1);
-//     border: 0.25em solid hsl(120 75% 50% / 1);
-//     border-radius: 100vw;
-// }
+::-webkit-scrollbar-thumb {      
+    border-radius: 100vw;    
+    @include bg-gradientl-2;    
+}
+
+@supports (scrollbar-color: black blue) {
+    * {
+        scrollbar-color: $color-blue $color-darkblue4;
+    }
+}
+
