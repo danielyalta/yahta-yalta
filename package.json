@@ -38,6 +38,7 @@
         "IE 10"
     ],
     "dependencies": {
+        "aos": "^2.3.4",
         "lightgallery": "^2.1.8",
         "swiper": "^6.8.0"
     }

@@ -31,8 +31,8 @@
         margin-bottom: 3rem;
 
         border-radius: 1rem;
-
         @include bg-gradient3-1;
+        -webkit-tap-highlight-color: transparent;
 
         position: relative;
         z-index: 21;
@@ -80,6 +80,7 @@
         transition: 0.6s ease;
         & img {
             @include img-fit;
+            object-fit: cover;
         }
     }
     &__description {

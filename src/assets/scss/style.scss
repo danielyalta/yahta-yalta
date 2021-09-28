@@ -1,5 +1,6 @@
 @import "vars";
 @import "nullstyle";
+@import "blocks/scrollbar";
 @import "blocks/main";
 @import "blocks/container";
 @import "blocks/header-nav";
@@ -20,8 +21,8 @@
 @import "blocks/contacts";
 @import "blocks/footer";
 
-
 // Vendor
+@import "vendor/aos/aos";
 @import "vendor/light-gallery/lightgallery-bundle";
 @import "vendor/swiper/swiper-bundle";
 @import "vendor/swiper/swiper";
@@ -37,7 +38,7 @@ body {
     color: $color-white;
     background: $color-darkblue;
     font-family: $font-main;
-    font-size: 1.4rem;
+    font-size: 1.4rem;    
 }
 
 .page {
