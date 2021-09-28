@@ -97,7 +97,7 @@
         border-radius: 2rem;
         @include bg-gradient2-4;
 
-        box-shadow: 0px 0px 5px 1px $color-blue;
+        box-shadow: 0px 0px 5px 1px $color-blue;        
     }
     &__parameters {
         position: relative;
@@ -186,6 +186,11 @@
     }
 }
 @media (max-width: 1100px) {
+    .ship {
+        &::before {
+            display: none;
+        }
+    }
 }
 @media (max-width: 990px) {
     .ship {
@@ -220,10 +225,11 @@
 }
 @media (max-width: 575px) {
     .ship {
-        &::before {
-            background: url(../images/fancy/waves-bg-mobile-2.svg) center no-repeat;
-            background-size: cover;
-        }
+        // &::before {
+        //     background: url(../images/fancy/waves-bg-mobile-2.svg) center no-repeat;
+        //     background-size: cover;
+        //     background: $color-darkblue;
+        // }
 
         &__name {
             margin: 2rem auto;
