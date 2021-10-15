@@ -106,8 +106,7 @@
     &__anchor {
         height: 100%;
         width: 100%;
-        & img,
-        source {
+        & img {
             @include img-fit;
         }
     }
