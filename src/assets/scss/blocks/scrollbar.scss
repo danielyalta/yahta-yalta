@@ -1,17 +1,17 @@
 // ================= Scroll-bar ================= //
 
 ::-webkit-scrollbar {
-    width: 2.5rem;
+    width: 2rem;
 }
 
-::-webkit-scrollbar-track {    
+::-webkit-scrollbar-track {
     background: $color-darkblue4;
-    
 }
 
-::-webkit-scrollbar-thumb {      
-    border-radius: 100vw;    
-    @include bg-gradientl-2;    
+::-webkit-scrollbar-thumb {
+    border: 2px solid $color-darkblue4;
+    border-radius: 100vw;
+    @include bg-gradientl-2;
 }
 
 @supports (scrollbar-color: black blue) {
@@ -19,4 +19,3 @@
         scrollbar-color: $color-blue $color-darkblue4;
     }
 }
-
