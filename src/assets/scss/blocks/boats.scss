@@ -48,9 +48,6 @@
             z-index: -1;
             transition: opacity 0.3s ease;
         }
-        &:hover {
-            transform: translateY(-2%);
-        }
         &:hover:before {
             opacity: 1;
         }
@@ -218,9 +215,8 @@
         &__item {
             width: 70%;
             margin-right: 0;
-            &:hover {
-                box-shadow: 4px 6px 6px 2px $color-darkblue3;
-                transform: none;
+            &:hover:before {
+                opacity: 0.4;
             }
             &:last-child {
                 margin-bottom: 0;
