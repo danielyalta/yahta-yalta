@@ -102,7 +102,10 @@
         z-index: 5;
         height: 260px;
         width: auto;
-
+    }
+    &__anchor {
+        height: 100%;
+        width: 100%;
         & img,
         source {
             @include img-fit;
