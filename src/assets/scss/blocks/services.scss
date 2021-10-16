@@ -1,9 +1,9 @@
 // ================= SERVICES ================= //
 
 .section--services {
-    color: $color-white;
-    background: $color-darkblue;
-    @include bg-gradient2-w;
+    color: $color-black;
+    background: $color-white;
+    // @include bg-gradient2-w;
     // background: url(../images/fancy/serviceswave2.svg) center no-repeat;
     // background-size: cover;
 }
