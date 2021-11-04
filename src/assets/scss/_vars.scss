@@ -50,78 +50,54 @@ $button-glow: $color-bronze 0px 0px 6px;
 
 @mixin bg-gradient1-w {
     background: $color-darkblue;
-    background: -moz-linear-gradient(to bottom, $color-darkblue, $color-white);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue, $color-white);
     background: linear-gradient(to bottom, $color-darkblue, $color-white);
 }
 
 @mixin bg-gradient2-w {
     background: $color-darkblue;
-    background: -moz-linear-gradient(to bottom, $color-darkblue2, $color-white);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue2, $color-white);
     background: linear-gradient(to bottom, $color-darkblue2, $color-white);
 }
 
 @mixin bg-gradient1-2 {
     background: $color-darkblue;
-    background: -moz-linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
     background: linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
 }
 @mixin bg-gradient1-3 {
     background: $color-darkblue;
-    background: -moz-linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
     background: linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
 }
 @mixin bg-gradient2-3 {
     background: $color-darkblue2;
-    background: -moz-linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
     background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
 }
 @mixin bg-gradient2-4 {
     background: $color-darkblue2;
-    background: -moz-linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
     background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
 }
 @mixin bg-gradient3-1 {
     background: $color-darkblue;
-    background: -moz-linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
     background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
 }
 @mixin bg-gradient3-2 {
     background: $color-darkblue;
-    background: -moz-linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
-    background: -webkit-linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
     background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
 }
 @mixin bg-gradient-radial {
     background: $color-darkblue;
-    background: -moz-radial-gradient(circle, rgba(29, 40, 53, 1) 0%, rgba(40, 54, 74, 1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(29, 40, 53, 1) 0%, rgba(40, 54, 74, 1) 100%);
     background: radial-gradient(circle, $color-darkblue2, $color-darkblue);
 }
 
 @mixin bg-gradientl-2 {
     background: $color-darkblue;
-    background: -moz-linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
-    background: -webkit-linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
     background: linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
 }
 
 // Shadows
 
 @mixin box-shadow-boats {
-    -webkit-box-shadow: 4px 6px 6px 2px $color-darkblue3;
-    -moz-box-shadow: 4px 6px 6px 2px $color-darkblue3;
     box-shadow: 4px 6px 6px 2px $color-darkblue3;
 }
 @mixin box-shadow-boats-hover {
-    -webkit-box-shadow: 4px 6px 9px 1px $color-darkblue3;
-    -moz-box-shadow: 4px 6px 9px 1px $color-darkblue3;
     box-shadow: 4px 6px 9px 1px $color-darkblue3;
 }
 
