@@ -1,7 +1,7 @@
 // ================= Scroll-bar ================= //
 
 ::-webkit-scrollbar {
-    width: 2rem;
+    width: 18px;
 }
 
 ::-webkit-scrollbar-track {
@@ -9,9 +9,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 2px solid $color-darkblue4;
+    // border: 2px solid $color-darkblue4;
+    border-top: 2px solid $color-lightblue;
+    border-left: 2px solid $color-lightblue;
     border-radius: 100vw;
-    @include bg-gradientl-2;
+    // @include bg-gradientl-2;
+    background: $color-darkblue;
+    // background: linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
 }
 
 @supports (scrollbar-color: black blue) {
