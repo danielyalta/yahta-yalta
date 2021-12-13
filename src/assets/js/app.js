@@ -1,5 +1,4 @@
 
-// ======================== Main JS ======================== //
 document.addEventListener("DOMContentLoaded", function (event) {
 
 
@@ -9,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const navMenu = document.getElementById('nav');
     const navLinks = document.querySelectorAll('.nav__link');
     const mySite = document.getElementById('main');
-    // 
+
 
 
 
@@ -40,14 +39,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
     // ============ Nav-link + outside: click - hide burger ============ //    
-    navLinks.forEach(n => n.addEventListener("click", closeMenu));
+    navLinks.forEach(n => n.addEventListener("click", hideBurger));
 
-    mySite.addEventListener("click", closeMenu);
+    mySite.addEventListener("click", hideBurger);
 
-
-    function closeMenu() {
-        burger.classList.remove("show");
-        navMenu.classList.remove("show");
+    function hideBurger() {
+        burger.classList.remove("show")
+        navMenu.classList.remove("show")
     }
 
 
