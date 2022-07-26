@@ -4,22 +4,22 @@
 // $color-darkblue2: #1E2938
 // $color-darkblue3: #151D28
 // $color-darkblue4: #0c1117
-$color-lightblue2: hsl(215, 50, 60);
-$color-lightblue: hsl(215, 30, 40);
-$color-blue: hsl(215, 30, 30);
-$color-darkblue: hsl(215, 30, 22);
-$color-darkblue2: hsl(215, 30, 17);
-$color-darkblue3: hsl(215, 30, 12);
-$color-darkblue4: hsl(215, 30, 7);
+$color-lightblue2: hsl(215, 50%, 60%);
+$color-lightblue: hsl(215, 30%, 40%);
+$color-blue: hsl(215, 30%, 30%);
+$color-darkblue: hsl(215, 30%, 22%);
+$color-darkblue2: hsl(215, 30%, 17%);
+$color-darkblue3: hsl(215, 30%, 12%);
+$color-darkblue4: hsl(215, 30%, 7%);
 
-$color-headerblue: hsl(218, 31, 15);
+$color-headerblue: hsl(218, 31%, 15%);
 
-$color-bronze: hsl(44, 40, 68);
-$color-white: hsl(0, 0, 100);
-$color-black: hsl(0, 0, 0);
+$color-bronze: hsl(44, 40%, 68%);
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
 
-$font-main: "Montserrat", sans-serif;
-$font-nice: "Caveat", italic;
+$font-main: 'Montserrat', sans-serif;
+$font-nice: 'Caveat', italic;
 
 $text-shadow: $color-darkblue3 3px 2px 3px;
 $text-shadow-white: $color-white 2px 2px 3px;
@@ -37,73 +37,73 @@ $button-glow: $color-bronze 0px 0px 6px;
 // ================= Mixins ================= //
 
 @mixin img-fit {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin bg-gradient1-w {
-    background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-darkblue, $color-white);
+  background: $color-darkblue;
+  background: linear-gradient(to bottom, $color-darkblue, $color-white);
 }
 
 @mixin bg-gradient2-w {
-    background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-darkblue2, $color-white);
+  background: $color-darkblue;
+  background: linear-gradient(to bottom, $color-darkblue2, $color-white);
 }
 
 @mixin bg-gradient1-2 {
-    background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
+  background: $color-darkblue;
+  background: linear-gradient(to bottom, $color-darkblue, $color-darkblue2);
 }
 @mixin bg-gradient1-3 {
-    background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
+  background: $color-darkblue;
+  background: linear-gradient(to bottom, $color-darkblue, $color-darkblue3);
 }
 @mixin bg-gradient2-3 {
-    background: $color-darkblue2;
-    background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
+  background: $color-darkblue2;
+  background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue3);
 }
 @mixin bg-gradient2-4 {
-    background: $color-darkblue2;
-    background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
+  background: $color-darkblue2;
+  background: linear-gradient(to bottom, $color-darkblue2, $color-darkblue4);
 }
 @mixin bg-gradient3-1 {
-    background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
+  background: $color-darkblue;
+  background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue);
 }
 @mixin bg-gradient3-2 {
-    background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
+  background: $color-darkblue;
+  background: linear-gradient(to bottom, $color-darkblue3, $color-darkblue2);
 }
 @mixin bg-gradient-radial {
-    background: $color-darkblue;
-    background: radial-gradient(circle, $color-darkblue2, $color-darkblue);
+  background: $color-darkblue;
+  background: radial-gradient(circle, $color-darkblue2, $color-darkblue);
 }
 
 @mixin bg-gradientl-2 {
-    background: $color-darkblue;
-    background: linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
+  background: $color-darkblue;
+  background: linear-gradient(to bottom, $color-lightblue, $color-darkblue2);
 }
 
 // Shadows
 
 @mixin box-shadow-boats {
-    box-shadow: 4px 6px 6px 2px $color-darkblue3;
+  box-shadow: 4px 6px 6px 2px $color-darkblue3;
 }
 @mixin box-shadow-boats-hover {
-    box-shadow: 4px 6px 9px 1px $color-darkblue3;
+  box-shadow: 4px 6px 9px 1px $color-darkblue3;
 }
 
 @mixin background-fixed {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
