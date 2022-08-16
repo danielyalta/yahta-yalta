@@ -1,15 +1,15 @@
 {
-    "name": "Vaynah",
-    "type": "моторная",
-    "model": "Bayliner",
-    "country": "США",
-    "price": "6 500 руб/час",
-    "capacity": "до 5 человек",
-    "length": "",
-    "beam": "",
-    "draft": "",
-    "speed": "6-8 узлов",
-    "cabins": "1",
-    "sleeps": "",
-    "toilets": "1"
+  "name": "Vaynah",
+  "type": "моторная",
+  "model": "Bayliner",
+  "country": "США",
+  "price": "7 500 руб/час",
+  "capacity": "до 5 человек",
+  "length": "",
+  "beam": "",
+  "draft": "",
+  "speed": "6-8 узлов",
+  "cabins": "1",
+  "sleeps": "",
+  "toilets": "1"
 }
