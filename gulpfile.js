@@ -6,8 +6,7 @@ const autoprefixer = require('gulp-autoprefixer')
 const cssbeautify = require('gulp-cssbeautify')
 const removeComments = require('gulp-strip-css-comments')
 const rename = require('gulp-rename')
-// const sass = require('gulp-sass')(require('sass'))
-const sass = require('gulp-sass')
+const sass = require('gulp-sass')(require('sass'))
 const cssnano = require('gulp-cssnano')
 const uglify = require('gulp-uglify')
 const plumber = require('gulp-plumber')
@@ -36,14 +35,18 @@ const path = {
     html: srcPath + 'pages/*.html',
     js: srcPath + 'assets/js/*.js',
     css: srcPath + 'assets/scss/*.scss',
-    images: srcPath + 'assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}',
+    images:
+      srcPath +
+      'assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}',
     fonts: srcPath + 'assets/fonts/**/*.{eot,woff,woff2,ttf,svg}',
   },
   watch: {
     html: srcPath + '**/*.html',
     js: srcPath + 'assets/js/**/*.js',
     css: srcPath + 'assets/scss/**/*.scss',
-    images: srcPath + 'assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}',
+    images:
+      srcPath +
+      'assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}',
     fonts: srcPath + 'assets/fonts/**/*.{eot,woff,woff2,ttf,svg}',
   },
   clean: './' + distPath,
@@ -281,7 +284,10 @@ function watchFiles() {
   gulp.watch([path.watch.fonts], fonts)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts, includes))
+const build = gulp.series(
+  clean,
+  gulp.parallel(html, css, js, images, fonts, includes)
+)
 const watch = gulp.parallel(build, watchFiles, serve)
 
 /* Exports Tasks */
