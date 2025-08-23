@@ -1,0 +1,36 @@
+.root {
+  position: relative;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: contain;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.closeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35); /* тёмная подложка */
+  backdrop-filter: blur(6px); /* сам блюр */
+  -webkit-backdrop-filter: blur(6px); /* поддержка Safari */
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+
+  svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+  }
+}

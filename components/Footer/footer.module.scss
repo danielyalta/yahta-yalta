@@ -1,0 +1,37 @@
+.root {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px;
+  gap: 30px;
+  background-color: var(--color-darkblue4);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.creator {
+  color: var(--color-bronze);
+  margin-left: 8px;
+  font-weight: 700;
+  // @include link;
+  &:visited {
+    color: var(--color-bronze);
+  }
+}
+
+@media (max-width: 770px) {
+  .root {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .logo {
+    align-self: flex-end;
+  }
+}

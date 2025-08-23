@@ -1,0 +1,26 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 480px;
+
+  padding: 10px;
+  border: 1px solid var(--color-bronze);
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-tap-highlight-color: transparent;
+
+  transition: all 0.2s linear;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: translateY(-3%);
+    }
+  }
+}
+
+.photo {
+  position: relative;
+  height: 70%;
+}

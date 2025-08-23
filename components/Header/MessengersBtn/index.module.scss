@@ -1,0 +1,52 @@
+.root {
+  width: 50px;
+  height: 40px;
+  position: relative;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  background-image:
+    url(/icons/telegram.svg), url(/icons/whatsapp.svg), url(/icons/viber.svg);
+  background-size: 25px;
+  background-position:
+    center bottom,
+    right top,
+    top left;
+  background-repeat: no-repeat;
+
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-position:
+      top left,
+      center bottom,
+      right top;
+  }
+}
+
+.messengers {
+  position: absolute;
+  top: 0;
+  transition: transform 0.2s ease-in;
+  transform: translate(calc(-100% - 30px), 60px);
+
+  width: max-content;
+  // @include bg-gradient-1-3;
+  border: 1px solid var(--color-bronze);
+  border-left-color: transparent;
+  border-radius: 0px 10px 10px 0px;
+  padding: 40px;
+}
+
+.active {
+  transform: translate(-30px, 60px);
+}
+
+@media (max-width: 575px) {
+  .messengers {
+    padding: 20px;
+  }
+}

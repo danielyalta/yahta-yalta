@@ -1,0 +1,32 @@
+.root {
+  background: linear-gradient(
+    to bottom right,
+    var(--color-darkblue),
+    var(--color-darkblue3)
+  );
+}
+
+.boats {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1450px) {
+  .boats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1180px) {
+  .boats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .boats {
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

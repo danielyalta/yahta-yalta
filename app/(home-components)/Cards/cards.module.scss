@@ -1,0 +1,175 @@
+.root {
+  width: 100%;
+  background: var(--color-darkblue);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsla(215, 30%, 2%, 0.8);
+    z-index: 10;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cards {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.95),
+      rgba(240, 240, 240, 0.9) 70%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(250, 250, 245, 1) 0%,
+      rgba(245, 245, 240, 1) 100%
+    );
+  background-blend-mode: multiply;
+  position: relative;
+  width: 350px;
+  height: 420px; /* ~соотношение Polaroid 1:1.2 */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+
+  padding: 8px 8px 75px 8px; /* сверху/сбоку узко, снизу — широкая рамка */
+
+  &:nth-child(odd) {
+    z-index: 2;
+    transform: rotate(-5deg);
+    @media (max-width: 640px) {
+      transform: none;
+    }
+  }
+  &:nth-child(even) {
+    transform: rotate(5deg);
+    z-index: 3;
+    @media (max-width: 640px) {
+      transform: none;
+    }
+  }
+  @media (max-width: 770px) {
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+
+.photo {
+  flex: 1;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+
+  text-align: center;
+  font-family: var(--font-caveat);
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+}
+
+.callToAction {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.polaroid {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  padding: 12px 12px 60px 12px;
+  background-clip: content-box;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #fdfdfd 0%, #f5f5f0 100%);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.08);
+    z-index: -1;
+  }
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background: #111; /* черный квадрат (будто фото) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--color-bronze);
+  text-shadow: 0 0 12px rgba(218, 165, 32, 0.6);
+}
+
+@media (max-width: 990px) {
+  .card {
+    width: 240px;
+    height: 300px;
+    padding: 5px 5px 45px 5px;
+  }
+  .caption {
+    font-size: 20px;
+    bottom: 5px;
+  }
+  .polaroid {
+    height: 290px;
+    width: 230px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    width: 280px;
+    height: 340px;
+  }
+  .caption {
+    font-size: 20px;
+  }
+  .callToAction {
+    flex-direction: column;
+  }
+}

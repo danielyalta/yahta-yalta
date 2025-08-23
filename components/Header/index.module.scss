@@ -1,0 +1,22 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 30px;
+
+  transition: all 0.4s ease-out;
+}
+
+.hide {
+  top: -80px;
+}
+
+.show {
+  top: 0;
+}

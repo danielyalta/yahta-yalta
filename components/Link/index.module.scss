@@ -1,0 +1,7 @@
+.root {
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

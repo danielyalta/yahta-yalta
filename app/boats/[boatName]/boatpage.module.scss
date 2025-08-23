@@ -1,0 +1,121 @@
+.root {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.photos {
+  height: calc(100svh - 80px - 115px); // 80px шапка, 115 тайтл
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainImage {
+  position: relative;
+}
+
+.thumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbs {
+  display: flex;
+  height: 25%;
+  width: 100%;
+  gap: 12px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px 40px;
+  width: 40%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-right: 20px;
+}
+
+.descriptionText {
+  font-size: 18px;
+  white-space: pre-wrap;
+  text-shadow: black 3px 3px 3px;
+}
+
+.subtitle {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: 700;
+  width: fit-content;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background: var(--color-bronze);
+
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1280px) {
+  .showcase {
+    flex-direction: column;
+  }
+  .photos {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+  }
+  .description {
+    padding-right: 0;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 640px) {
+  .showcase {
+    gap: 20px;
+  }
+  .title {
+    padding: 10px 0;
+    font-size: 32px;
+  }
+  .photos {
+    height: 65svh;
+    gap: 5px;
+  }
+  .thumbs {
+    gap: 5px;
+  }
+}
