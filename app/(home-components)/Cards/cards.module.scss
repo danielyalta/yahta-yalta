@@ -64,9 +64,10 @@
       transform: none;
     }
   }
-  @media (max-width: 770px) {
+  @media (min-width: 770px) {
     &:hover {
       transform: scale(1.3);
+      z-index: 5;
     }
   }
 }
