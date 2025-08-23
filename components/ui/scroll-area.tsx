@@ -22,6 +22,8 @@ const ScrollArea = React.forwardRef<
   >
     {/* ВАЖНО: overflow-auto и без h-full, чтобы max-h на Root/Viewport реально ограничивал высоту */}
     <ScrollAreaPrimitive.Viewport
+      onWheel={(e) => e.stopPropagation()}
+      onTouchMove={(e) => e.stopPropagation()}
       className={cn(
         "w-full overflow-auto rounded-[inherit]",
         viewportClassName ?? className, // пробрасываем ограничения высоты и сюда

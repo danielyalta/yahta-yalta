@@ -142,8 +142,7 @@ export function Combobox({
       </ErrorMessageWrapper>
       <PopoverContent
         align="start"
-        className="bg-gradient-1-3 z-50 w-[340px] p-0"
-        onWheel={(e) => e.stopPropagation()}
+        className="bg-gradient-1-3 z-50 max-w-[90vw] p-0"
       >
         <Command filter={customFilter}>
           <ScrollArea className="h-fit max-h-[300px]">
