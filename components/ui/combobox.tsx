@@ -145,35 +145,33 @@ export function Combobox({
         className="bg-gradient-1-3 z-50 max-w-[90vw] p-0"
       >
         <Command filter={customFilter}>
-          <ScrollArea className="h-fit max-h-[300px]">
-            <CommandList>
-              {isLoading ? (
-                <div className="flex items-center justify-center p-4">
-                  <Spinner size="s" />
-                </div>
-              ) : (
-                <>
-                  <CommandEmpty>Ничего не найдено</CommandEmpty>
-                  <CommandGroup>
-                    {options.map((option) => (
-                      <CommandItem
-                        className="justify-between"
-                        key={option.value}
-                        value={option.value}
-                        onSelect={() => handleSelect(option.value)}
-                      >
-                        <div className="flex items-center gap-2">
-                          <div>{option.icon}</div>
-                          {option.label}
-                        </div>
-                        {value === option.value && <Check className="size-4" />}
-                      </CommandItem>
-                    ))}
-                  </CommandGroup>
-                </>
-              )}
-            </CommandList>
-          </ScrollArea>
+          <CommandList className="h-fit max-h-[300px] overflow-y-auto">
+            {isLoading ? (
+              <div className="flex items-center justify-center p-4">
+                <Spinner size="s" />
+              </div>
+            ) : (
+              <>
+                <CommandEmpty>Ничего не найдено</CommandEmpty>
+                <CommandGroup>
+                  {options.map((option) => (
+                    <CommandItem
+                      className="justify-between"
+                      key={option.value}
+                      value={option.value}
+                      onSelect={() => handleSelect(option.value)}
+                    >
+                      <div className="flex items-center gap-2">
+                        <div>{option.icon}</div>
+                        {option.label}
+                      </div>
+                      {value === option.value && <Check className="size-4" />}
+                    </CommandItem>
+                  ))}
+                </CommandGroup>
+              </>
+            )}
+          </CommandList>
         </Command>
       </PopoverContent>
     </Popover>
