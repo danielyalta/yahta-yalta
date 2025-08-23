@@ -42,12 +42,25 @@ export const metadata: Metadata = {
     locale: "ru_RU",
     type: "website",
     url: SITE_URL,
-    images: "/images/og-image.jpg",
+    images: `${SITE_URL}/images/og-image.jpg`,
     description:
       "Морская прогулка в Ялте. Морская прогулка к Ласточкино гнездо. Аренда яхты в Ялте. Аренда катера Ялта. Прогулка на яхте",
   },
   verification: {
     yandex: "66a28b60d8138467",
+  },
+  icons: {
+    icon: [
+      { url: "/favicons/favicon.ico", sizes: "any" },
+      { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/favicons/apple-touch-icon.png",
+  },
+  manifest: "/favicons/site.webmanifest",
+  other: {
+    "mask-icon": "/favicons/safari-pinned-tab.svg",
+    "msapplication-config": "/favicons/browserconfig.xml",
   },
 }
 
