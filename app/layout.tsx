@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     locale: "ru_RU",
     type: "website",
     url: SITE_URL,
-    images: `${SITE_URL}/images/og-image.jpg`,
+    images: `/images/og-main.jpg`,
     description:
       "Морская прогулка в Ялте. Морская прогулка к Ласточкино гнездо. Аренда яхты в Ялте. Аренда катера Ялта. Прогулка на яхте",
   },
