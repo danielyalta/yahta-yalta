@@ -29,7 +29,7 @@ const NotFoundPage = () => {
         <div className="flex space-x-4">
           <ButtonLink href="/">
             <Compass />
-            Вернуться в порт
+            Вернуться на главную
           </ButtonLink>
           {/* <ButtonLink href="/contacts" variant="secondary">
             <Map />
