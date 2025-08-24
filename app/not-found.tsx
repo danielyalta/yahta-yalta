@@ -31,10 +31,10 @@ const NotFoundPage = () => {
             <Compass />
             Вернуться в порт
           </ButtonLink>
-          <ButtonLink href="/contacts" variant="secondary">
+          {/* <ButtonLink href="/contacts" variant="secondary">
             <Map />
             Проверить карту
-          </ButtonLink>
+          </ButtonLink> */}
         </div>
       </div>
     </div>
