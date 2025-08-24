@@ -1,7 +1,7 @@
 import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  // временные редиректы, пока поисковые системы не раздуплятся
+  // временные редиректы, пока поисковые системы не раздуплятся.
   async redirects() {
     return [
       {
