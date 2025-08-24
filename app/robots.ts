@@ -1,8 +1,7 @@
+import { SITE_URL } from "@/lib/constants"
 import type { MetadataRoute } from "next"
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://yahta-yalta.com"
-
   return {
     rules: [
       {
@@ -20,6 +19,6 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 10, // 10 seconds
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${SITE_URL}/sitemap.xml`,
   }
 }

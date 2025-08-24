@@ -8,4 +8,4 @@ export const boatTypeMapping = {
 
 export const dashChar = "—"
 
-export const SITE_URL = "https://yahta-yalta.ru/"
+export const SITE_URL = "https://yahta-yalta.ru"

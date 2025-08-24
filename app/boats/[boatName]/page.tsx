@@ -49,13 +49,13 @@ ${keywordsMapping[type]},
 
   return {
     alternates: {
-      canonical: `${SITE_URL}boats/${name}`,
+      canonical: `${SITE_URL}/boats/${name}`,
     },
     title: `${titleMainPart}. Аренда и морская прогулка на ${capitalize(name)} в Ялте`,
     description,
     keywords,
     openGraph: {
-      url: `${SITE_URL}boats/${name}`,
+      url: `${SITE_URL}/boats/${name}`,
       images: mainImage,
       type: "website",
       description,

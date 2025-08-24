@@ -1,13 +1,12 @@
 import type { MetadataRoute } from "next"
 import { orderedBoatsData } from "@/data"
+import { SITE_URL } from "@/lib/constants"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://yahta-yalta.com"
-
   // static routes
   const routes: MetadataRoute.Sitemap = [
     {
-      url: baseUrl,
+      url: SITE_URL,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
@@ -17,13 +16,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // boats dynamic routes
   const boatRoutes: MetadataRoute.Sitemap = orderedBoatsData.flatMap((boat) => [
     {
-      url: `${baseUrl}/boats/${boat.name}`,
+      url: `${SITE_URL}/boats/${boat.name}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/boats/${boat.name}/gallery`,
+      url: `${SITE_URL}/boats/${boat.name}/gallery`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
