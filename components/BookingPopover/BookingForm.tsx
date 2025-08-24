@@ -4,29 +4,23 @@ import { Image } from "@/components/Image"
 import { Button } from "@/components/ui/button"
 import { DialogClose, DialogFooter } from "@/components/ui/dialog"
 import { Label } from "@/components/ui/label"
-import { orderedBoatsData } from "@/data"
+import { MAX_BOAT_PRICE, MIN_BOAT_PRICE, orderedBoatsData } from "@/data"
 import { capitalize, pluralize } from "@/lib/utils"
 import telegram from "@/public/icons/telegram.svg"
 import whatsapp from "@/public/icons/whatsapp.svg"
+import { ru } from "date-fns/locale"
 import { FormProvider, useForm } from "react-hook-form"
 import { Combobox } from "../ui/combobox"
-import { ru } from "date-fns/locale"
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
-import { CircleQuestionMark } from "lucide-react"
 import { TELEGRAM_BASE, WHATSAPP_BASE } from "../Contacts"
 import { ControlledNumberInput } from "../ControlledInputs/ControlledNumberInput"
 import { ButtonLink } from "../ui/button-link"
 import { Slider } from "../ui/slider"
 
-import { ControlledCalendar } from "../ControlledInputs/ControlledCalendar"
 import { formatDate } from "date-fns"
-import { InfoHint } from "../InfoHint"
 import { useParams } from "next/navigation"
+import { ControlledCalendar } from "../ControlledInputs/ControlledCalendar"
+import { InfoHint } from "../InfoHint"
 
 const messengerOptions = [
   {
@@ -67,10 +61,6 @@ const boatOptions = orderedBoatsData.map(({ slug }) => {
 const chooseForMeVariant = "помочь с подбором"
 boatOptions.unshift({ label: chooseForMeVariant, value: chooseForMeVariant })
 
-const allPrices = orderedBoatsData.map((b) => b.price)
-const minBoatPrice = Math.min(...allPrices)
-const maxBoatPrice = Math.max(...allPrices)
-
 export const BookingForm = () => {
   const { boatName } = useParams<{ boatName: BoatName }>()
 
@@ -88,7 +78,7 @@ export const BookingForm = () => {
       selectedBoat: selectedBoatDefaultValue,
       duration: [2, 5],
       people: 2,
-      price: [minBoatPrice, maxBoatPrice],
+      price: [MIN_BOAT_PRICE, MAX_BOAT_PRICE],
       date: null,
       time: "09:00",
     },
@@ -164,8 +154,8 @@ export const BookingForm = () => {
                 <div>{priceText}</div>
                 <Slider
                   name="price"
-                  min={minBoatPrice}
-                  max={maxBoatPrice}
+                  min={MIN_BOAT_PRICE}
+                  max={MAX_BOAT_PRICE}
                   step={1000}
                 />
               </div>

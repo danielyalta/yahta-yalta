@@ -52,3 +52,8 @@ export const orderedBoatsData: BoatData[] = [
   snafu,
   vaynah,
 ]
+
+const allPrices = orderedBoatsData.map((b) => b.price)
+
+export const MIN_BOAT_PRICE = Math.min(...allPrices)
+export const MAX_BOAT_PRICE = Math.max(...allPrices)

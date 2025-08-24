@@ -1,6 +1,7 @@
 // /lib/structured-data/getRootJsonLd.ts
 import { SITE_URL } from "@/lib/constants"
 import { PHONE_NUMBER } from "@/components/Contacts" // Убедитесь, что PHONE_NUMBER экспортируется
+import { MIN_BOAT_PRICE } from "@/data"
 
 // Если у вас есть другие константы (например, EMAIL_ADDRESS, LOGO_URL, SOCIAL_LINKS),
 // которые используются в JSON-LD, их также можно импортировать сюда или передать как аргументы.
@@ -71,7 +72,7 @@ export function getRootJsonLd({
             priceCurrency: "RUB",
             priceSpecification: {
               "@type": "PriceSpecification",
-              minPrice: "7000",
+              minPrice: MIN_BOAT_PRICE,
               priceCurrency: "RUB",
             },
           },
@@ -85,7 +86,7 @@ export function getRootJsonLd({
             priceCurrency: "RUB",
             priceSpecification: {
               "@type": "PriceSpecification",
-              minPrice: "7000",
+              minPrice: MIN_BOAT_PRICE,
               priceCurrency: "RUB",
             },
           },
@@ -99,7 +100,7 @@ export function getRootJsonLd({
             priceCurrency: "RUB",
             priceSpecification: {
               "@type": "PriceSpecification",
-              minPrice: "7000",
+              minPrice: MIN_BOAT_PRICE,
               priceCurrency: "RUB",
             },
           },
