@@ -5,8 +5,14 @@ import { Image } from "@/components/Image"
 
 import styles from "./footer.module.scss"
 import { cn } from "@/lib/utils"
+import { usePathname } from "next/navigation"
 
 export const Footer = () => {
+  const pathname = usePathname()
+  const isGalleryPage = pathname?.includes("/gallery")
+
+  if (isGalleryPage) return null
+
   return (
     <footer className={cn(styles.root, "bg-gradient-1-3")}>
       {/* <RopeDivider placement="top" /> */}
