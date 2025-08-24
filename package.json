@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-images": "ts-node scripts/generateBoatImagesManifest.ts"
+    "generate-images-manifest": "ts-node scripts/generate-boats-images-manifest.ts",
+    "generate-og-images": "ts-node scripts/generate-boats-og-images.ts"
   },
   "dependencies": {
     "@maskito/core": "^3.9.0",
@@ -39,6 +40,7 @@
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
+    "sharp": "^0.34.3",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.0",

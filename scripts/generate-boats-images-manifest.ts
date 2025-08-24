@@ -1,6 +1,5 @@
-// @ts-nocheck
-const fs = require("fs")
-const path = require("path")
+import fs from "fs"
+import path from "path"
 
 const boatsDir = path.resolve(process.cwd(), "public/images/boats")
 
@@ -14,6 +13,7 @@ const collator = new Intl.Collator(undefined, {
 fs.readdirSync(boatsDir).forEach((folder) => {
   const folderPath = path.join(boatsDir, folder)
   if (fs.statSync(folderPath).isDirectory()) {
+    // @ts-expect-error lol
     groupedImages[folder] = fs
       .readdirSync(folderPath)
       .filter((file) => /\.(png|jpe?g|svg|webp|gif)$/.test(file))

@@ -29,7 +29,6 @@ export async function generateMetadata({
   const { boatName } = await params
   const {
     data: { slug, type, name, price, capacity },
-    mainImage,
   } = getBoatData(boatName as BoatName)
 
   const textAddition = type === "catamaran" ? "" : "яхта"
@@ -56,7 +55,7 @@ ${keywordsMapping[type]},
     keywords,
     openGraph: {
       url: `${SITE_URL}/boats/${name}`,
-      images: mainImage,
+      images: `/images/boats/${name}/og-image/generated-og-image.jpg`,
       type: "website",
       description,
       title: `${titleMainPart}. Аренда яхты и морская прогулка в Ялте`,
