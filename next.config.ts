@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path.html",
         destination: "/boats/:path",
-        permanent: true, // 308 redirect
+        permanent: true,
       },
     ]
   },
