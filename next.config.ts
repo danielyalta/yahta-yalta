@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*.html",
-        destination: "/:path*",
-        permanent: true, // 308 redirect (SEO friendly)
+        source: "/:path.html",
+        destination: "/boats/:path",
+        permanent: true, // 308 redirect
       },
     ]
   },
